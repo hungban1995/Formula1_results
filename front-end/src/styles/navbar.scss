@@ -1,0 +1,67 @@
+.navbar-container {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  .logo {
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(222, 62, 62);
+  }
+  .search {
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    position: relative;
+    input {
+      height: 30px;
+      width: 300px;
+    }
+    button {
+      border: none;
+      margin: 2px;
+      padding: 5px;
+      color: lightsalmon;
+      border-radius: 10px;
+      background-color: white;
+      border: 1px solid rgba(128, 128, 128, 0.47);
+      &:active {
+        background-color: rgb(253, 227, 227);
+      }
+    }
+
+    .results {
+      background-color: white;
+      border: 1px solid rgba(128, 128, 128, 0.47);
+
+      position: absolute;
+      width: 400px;
+      top: 40px;
+      max-height: 300px;
+      overflow: auto;
+      .result-item {
+        cursor: pointer;
+        padding: 5px;
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+      }
+    }
+  }
+
+  .more-data {
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+    background-color: lightcoral;
+    color: white;
+    &:active {
+      background-color: rgb(222, 62, 62);
+    }
+  }
+}
