@@ -9,11 +9,6 @@ export const searchData = (q: string) => {
         " UNION SELECT TEAM as name,  'team' AS data_type FROM teams " +
         " WHERE TEAM LIKE ?  group by name ";
     const searchValue = `%${q}%`;
-
-
-
-
-
     return new Promise((resolve, reject) => {
         db.query(query, [searchValue, searchValue, searchValue, searchValue, searchValue, searchValue,], (err: any, data: unknown) => {
             if (err) reject(err);

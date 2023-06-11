@@ -1,0 +1,26 @@
+@import "./navbar.scss";
+.App {
+  width: 90%;
+  margin: auto;
+  .data-view {
+    margin: 30px auto;
+    width: 50%;
+  }
+  .control {
+    border-top: 1px solid rgba(128, 128, 128, 0.4);
+    margin: 30px;
+    text-align: center;
+    select {
+      height: 30px;
+      margin: 20px;
+    }
+  }
+  .table-data-view {
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    max-height: 200px;
+    overflow: auto;
+  }
+}
