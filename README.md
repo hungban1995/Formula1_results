@@ -1,6 +1,6 @@
 # Formula1_results
 
-<!-- I. Mô tả quá trình thực hiện.
+ I. Mô tả quá trình thực hiện.
     1. Back-end và Data:
     - Thiết lập các cài đặt cơ bản cho một server.
     - Sử dụng cheerio để Crawl data từ website và lưu vào csdl mysql.
@@ -20,4 +20,4 @@
 II. Thực thi hệ thống.
     - Để tiện cho việc test app: xin hãy import file race_results.sql vào phần mềm mysql hoặc xampp để kết nối database dễ dàng.
     - Kiểm tra lại cổng kết nối ở file db.configs.ts trong thư mục back-end/src/configs.
-    - Mở terminal ở thư mục server và client cài đặt các package cần thiết trước khi bắt đầu -->
+    - Mở terminal ở thư mục server và client cài đặt các package cần thiết trước khi bắt đầu 
