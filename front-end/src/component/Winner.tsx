@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 
 function Winner({ results }: { results: any }) {
   const { data } = useSelector((state: any) => state.values);
-
   return (
     <div>
       <h1>GRAND {data.value}</h1>
